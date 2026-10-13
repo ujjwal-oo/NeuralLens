@@ -1,0 +1,10 @@
+<div class="card"><h2>Teach a network to separate two groups</h2>
+<p>Each blue and orange dot is a training example. The network learns a boundary, shown as shaded regions, by nudging its weights to reduce the loss (its error score).</p>
+<label>Dataset</label><select id="ds"><option value="circle">Circle in circle</option><option value="xor">Opposite corners (XOR)</option><option value="spiral">Two spirals</option></select>
+<label>Hidden neurons <b id="H-v"></b></label><input id="H" type="range" min="1" max="8" value="4">
+<label>Learning rate <b id="lr-v"></b></label><input id="lr" type="range" min=".01" max="3" step=".01" value=".5">
+<label>Activation</label><select id="act"><option value="tanh">tanh (smooth)</option><option value="relu">ReLU (bent lines)</option></select>
+<div class="row"><button class="btn p" id="play">Pause</button><button class="btn" id="reset">Restart training</button></div>
+<p class="coach" id="tip-ann"></p></div>
+<div class="card"><canvas id="annc" width="360" height="360"></canvas><div class="stats"><span>Epoch <b id="s-ep">0</b></span><span>Loss <b id="s-l">0</b></span><span>Accuracy <b id="s-a">0%</b></span></div>
+<div class="cap">Loss over time (lower is better)</div><canvas id="annl" width="360" height="110"></canvas></div>

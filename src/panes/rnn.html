@@ -1,0 +1,7 @@
+<div class="card"><h2>Why LSTMs remember longer</h2>
+<p>A short signal arrives at steps 2 to 4, then nothing. A plain RNN must carry it forward through repeated squashing, so it fades. An LSTM has a forget gate that decides how much memory to keep.</p>
+<label>Forget gate bias <b id="bf-v"></b></label><input id="bf" type="range" min="-4" max="4" step=".1" value="0">
+<label>Input gate bias <b id="bi-v"></b></label><input id="bi" type="range" min="-4" max="4" step=".1" value="1">
+<label>RNN recurrent weight <b id="rw-v"></b></label><input id="rw" type="range" min="0" max="1.5" step=".05" value=".7">
+<p class="coach" id="tip-rnn"></p></div>
+<div class="card"><canvas id="rnnc" width="560" height="280"></canvas><div class="stats"><span>Forget gate <b id="s-f"></b></span><span>Input gate <b id="s-i"></b></span><span>LSTM memory left <b id="s-lm"></b></span><span>RNN memory left <b id="s-rm"></b></span></div></div>
