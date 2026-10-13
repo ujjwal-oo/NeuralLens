@@ -1,0 +1,15 @@
+# Deep Learning
+torch
+numpy
+
+# Backend API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Data Processing and Evaluation
+scikit-learn
+
+# Testing
+pytest
+httpx
