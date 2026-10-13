@@ -1,0 +1,10 @@
+<div class="card"><h2>See what a convolution does</h2>
+<p>A CNN slides a small grid of numbers (a filter) over an image. At each spot it multiplies and adds, producing a feature map that lights up where the filter's pattern appears.</p>
+<label>Filter preset</label><select id="kp"></select>
+<label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="relu" checked> ReLU (drop negative values)</label>
+<label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="pool"> Max-pool 2×2 (shrink the map)</label>
+<div class="row"><button class="btn" id="clr">Clear image</button><button class="btn" id="shape">Reset shape</button></div>
+<p class="coach" id="tip-cnn">Draw on the image, then hover over the feature map to see which pixels produced each value.</p></div>
+<div class="card"><div class="cnn"><div><h3>Image (click or drag)</h3><div class="grid" id="cin" style="grid-template-columns:repeat(8,1fr)"></div></div>
+<div><h3>Filter</h3><div class="grid k" id="ck" style="grid-template-columns:repeat(3,1fr)"></div></div>
+<div><h3>Feature map</h3><div class="grid" id="cout"></div></div></div><div class="cap">Blue = filter matches strongly, orange = opposite pattern.</div></div>

@@ -1,0 +1,6 @@
+<div class="card"><h2>Race three optimizers downhill</h2>
+<p>Training means rolling down a loss surface. This valley is steep one way and shallow the other. Plain SGD zigzags, momentum builds speed, and Adam rescales each direction.</p>
+<label>Learning rate <b id="olr-v"></b></label><input id="olr" type="range" min=".02" max="1.2" step=".02" value=".2">
+<div class="row"><button class="btn p" id="orst">Run again</button></div>
+<p class="coach" id="tip-opt">Click anywhere on the map to choose a new starting point.</p></div>
+<div class="card"><canvas id="optc" width="560" height="300"></canvas><div class="cap">Rings are loss levels. The minimum is at the center.</div></div>

@@ -1,0 +1,10 @@
+<div class="card"><h2>A forger and a detective</h2>
+<p>The generator makes fake numbers. The discriminator guesses real or fake. Each improves by beating the other. Success looks like orange bars matching the blue curve.</p>
+<label>Real data average <b id="mu-v"></b></label><input id="mu" type="range" min="1" max="7" step=".1" value="4">
+<label>Real data spread <b id="sd-v"></b></label><input id="sd" type="range" min=".5" max="2" step=".1" value="1">
+<label>Generator speed <b id="lg-v"></b></label><input id="lg" type="range" min=".005" max=".3" step=".005" value=".05">
+<label>Discriminator speed <b id="ld-v"></b></label><input id="ld" type="range" min=".01" max=".5" step=".01" value=".1">
+<div class="row"><button class="btn p" id="gplay">Pause</button><button class="btn" id="greset">Restart</button></div>
+<p class="coach" id="tip-gan"></p></div>
+<div class="card"><canvas id="ganc" width="560" height="280"></canvas><div class="stats"><span>Fake average <b id="s-fm"></b></span><span>Fake spread <b id="s-fs"></b></span></div>
+<div class="cap">Blue area: real data. Orange bars: generated data. Line: discriminator's belief that a value is real (dashed = 50%).</div></div>

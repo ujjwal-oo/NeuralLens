@@ -1,0 +1,5 @@
+<div class="card"><h2>How a Transformer pays attention</h2>
+<p>Each word scores every other word, then softmax turns the scores into weights that sum to 1. Click a row to see where that word looks. Words with similar meaning attend to each other.</p>
+<label>Temperature <b id="atemp-v"></b></label><input id="atemp" type="range" min=".2" max="4" step=".1" value="1">
+<p class="coach" id="tip-att"></p></div>
+<div class="card"><div class="grid" id="attg" style="width:100%"></div><div class="cap">Rows: the word asking. Columns: the word being looked at.</div></div>

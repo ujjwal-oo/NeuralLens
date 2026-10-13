@@ -21,16 +21,14 @@ dist/
 wheels/
 pip-wheel-metadata/
 
-# ==============================
 # Virtual Environments
-# ==============================
 venv/
 .venv/
 env/
 ENV/
 
 # ==============================
-# Testing & Coverage
+# Testing, Coverage & Type Checking
 # ==============================
 .pytest_cache/
 .coverage
@@ -43,7 +41,7 @@ htmlcov/
 .hypothesis/
 
 # ==============================
-# Machine Learning & Model Files
+# Machine Learning Model Files
 # ==============================
 *.pt
 *.pth
@@ -60,7 +58,7 @@ mlruns/
 wandb/
 
 # ==============================
-# Datasets & Generated Data
+# Datasets & Generated Files
 # ==============================
 data/
 datasets/
@@ -127,6 +125,6 @@ desktop.ini
 .ipynb_checkpoints/
 
 # ==============================
-# Optional local Python configuration
+# Optional Python Version Configuration
 # ==============================
 .python-version
